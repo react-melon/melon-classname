@@ -83,6 +83,11 @@ Babel.prototype.afterAll = function (processContext) {
         + babel.buildExternalHelpers(processContext.usedHelpers, 'var')
         + '\nmodule.exports = babelHelpers;';
 
+    usedHelpers = usedHelpers
+        .replace('babelHelpers;', '')
+        // hack ie 8 支持
+        .replace('.extends', '["extends"]');
+
     var baseDir = processContext.baseDir;
 
     var configFile = path.resolve(baseDir, this.configFile);

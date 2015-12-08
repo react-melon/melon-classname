@@ -4,7 +4,7 @@ define('melon-classname/babelHelpers', [
     'module'
 ], function (require, exports, module) {
     var babelHelpers = {};
-    babelHelpers.extends = Object.assign || function (target) {
+    babelHelpers['extends'] = Object.assign || function (target) {
         for (var i = 1; i < arguments.length; i++) {
             var source = arguments[i];
             for (var key in source) {
@@ -24,6 +24,5 @@ define('melon-classname/babelHelpers', [
             return Array.from(arr);
         }
     };
-    babelHelpers;
     module.exports = babelHelpers;
 });
