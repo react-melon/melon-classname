@@ -1,6 +1,6 @@
 {
   "name": "melon-classname",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "classname util for melon",
   "main": "lib/index.js",
   "scripts": {
