@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "fecs src",
     "build:amd": "sh tool/build-amd.sh",
-    "build:cmd": "sh tool/build-cmd.sh"
+    "build:commonjs": "sh tool/build-commonjs.sh"
   },
   "author": {
     "name": "ludafa",

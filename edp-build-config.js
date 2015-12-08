@@ -76,7 +76,7 @@ exports.getProcessors = function () {
             moduleProcessor,
             pathMapperProcessor
         ],
-        cmd: [
+        commonjs: [
             cmdBabel,
             pathMapperProcessor
         ],
@@ -88,11 +88,12 @@ exports.getProcessors = function () {
 };
 
 exports.exclude = [
+    '*.log',
     '*.md',
     'dist',
     'README',
     '.*',
-    '*.json',
+    'bower.json',
     'dep',
     'example',
     'tool',
