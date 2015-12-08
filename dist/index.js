@@ -37,7 +37,7 @@ define('melon-classname/index', [
         var disabled = props.disabled;
         var validity = props.validity;
         var isValid = validity ? validity.isValid() : null;
-        return babelHelpers.extends({}, states, {
+        return babelHelpers['extends']({}, states, {
             hidden: hidden,
             disabled: disabled,
             invalid: isValid === false,
@@ -72,7 +72,7 @@ define('melon-classname/index', [
                 return builder;
             }
             function addStates(newStates) {
-                states = babelHelpers.extends({}, states, newStates);
+                states = babelHelpers['extends']({}, states, newStates);
                 return builder;
             }
             function removeStates(name) {
