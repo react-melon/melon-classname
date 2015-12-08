@@ -1,0 +1,18 @@
+{
+  "name": "melon-classname",
+  "version": "0.1.0",
+  "description": "classname util for melon",
+  "main": "src/main.js",
+  "license": "MIT",
+  "author": {
+    "name": "ludafa",
+    "email": "ludafa@outlook.com"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "dep",
+    "test",
+    "tests"
+  ]
+}
