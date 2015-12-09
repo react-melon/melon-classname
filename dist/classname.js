@@ -1,11 +1,8 @@
 define('melon-classname/classname', [
     'require',
     'exports',
-    'module',
-    './babelHelpers'
+    'module'
 ], function (require, exports, module) {
-    var babelHelpers = require('./babelHelpers');
-    'use strict';
     var toString = Object.prototype.toString;
     var hasOwnProperty = Object.prototype.hasOwnProperty;
     function create() {
@@ -21,7 +18,7 @@ define('melon-classname/classname', [
                 classes.push(arg);
                 break;
             case 'Array':
-                classes.push.apply(classes, babelHelpers.toConsumableArray(create.apply(undefined, babelHelpers.toConsumableArray(arg))));
+                classes.push.apply(classes, create.apply(undefined, arg));
                 break;
             case 'Object':
                 for (var key in arg) {

@@ -3,7 +3,6 @@ define('melon-classname/conf', [
     'exports',
     'module'
 ], function (require, exports, module) {
-    'use strict';
     module.exports = {
         COMPONENT_SIZES: [
             'xxs',

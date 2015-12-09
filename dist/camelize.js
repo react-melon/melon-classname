@@ -3,7 +3,6 @@ define('melon-classname/camelize', [
     'exports',
     'module'
 ], function (require, exports, module) {
-    'use strict';
     module.exports = function (source) {
         if (!source) {
             return '';

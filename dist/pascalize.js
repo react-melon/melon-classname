@@ -4,7 +4,6 @@ define('melon-classname/pascalize', [
     'module',
     './camelize'
 ], function (require, exports, module) {
-    'use strict';
     var camelize = require('./camelize');
     module.exports = function (source) {
         if (!source) {
